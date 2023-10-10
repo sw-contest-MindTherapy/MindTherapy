@@ -1,0 +1,39 @@
+<html layout:decorate="~{layout}" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<div layout:fragment="content" class="container my-3">
+    <div class="my-3 border-bottom">
+        <div>
+            <h4>회원가입</h4>
+        </div>
+    </div>
+    <form th:action="@{/user/signup}" th:object="${userCreateForm}" method="post">
+        <div th:replace="~{form_errors :: formErrorsFragment}"></div>
+        <div class="mb-3">
+            <label for="username" id="username" class="form-label">사용자ID</label>
+            <input type="text" th:field="*{username}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="password1" id="password1" class="form-label">비밀번호</label>
+            <input type="password" th:field="*{password1}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="password2"   id="password2" class="form-label">비밀번호 확인</label>
+            <input type="password" th:field="*{password2}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="email"  id="email" class="form-label">이메일</label>
+            <input type="email" th:field="*{email}" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">회원가입</button>
+    </form>
+</div>
+</html>
+
+<!--
+1.<div layout:fragment="content" class="container my-3">: 이 div 요소는 레이아웃 템플릿의 "content" 프래그먼트를 정의합니다.
+이 프래그먼트는 실제 페이지 콘텐츠를 감싸는 역할을 합니다.
+"container my-3" 클래스는 부트스트랩(Bootstrap) CSS 클래스로, 컨텐츠를 가운데 정렬하고 여백을 추가하는 역할을 합니다
+2.<form th:action="@{/user/signup}" th:object="${userCreateForm}" method="post">: 폼 요소를 정의합니다.
+th:action은 폼이 제출될 때 요청이 전송되는 URL을 설정하고, th:object는 폼 데이터를 바인딩할 객체를 지정합니다.
+ 이 폼은 POST 메서드로 데이터를 서버로 전송
+ 3.입력 필드는 <input> 요소를 사용하여 정의되며, 사용자가 사용자 이름, 비밀번호, 비밀번호 확인, 이메일을 입력할 수 있도록 합니다.
+ th:field 속성은 입력 필드와 데이터 객체의 필드를 연결합니다-->
