@@ -20,6 +20,6 @@ public interface QuestionRepository extends JpaRepository<Question,Integer> {
     Page<Question> findAll(Pageable pageable);
 
 
-
-
 }
+
+//인터페이스 쓰는 이유 : 스프링이 알아서 해줌

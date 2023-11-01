@@ -1,27 +1,45 @@
 <html layout:decorate="~{layout}" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/signup_form.css}">
+</head>
+
+
 <div layout:fragment="content" class="container my-3">
     <div class="my-3 border-bottom">
         <div>
-            <h4>회원가입</h4>
+            <h4><b>회원가입</b></h4>
         </div>
     </div>
     <form th:action="@{/user/signup}" th:object="${userCreateForm}" method="post">
         <div th:replace="~{form_errors :: formErrorsFragment}"></div>
         <div class="mb-3">
-            <label for="username" id="username" class="form-label">사용자ID</label>
-            <input type="text" th:field="*{username}" class="form-control">
+            <label for="username" id="username" class="form-label"><h5><b>사용하실 사용자ID를 입력하세요.</b></h5></label>
+            <input type="text" th:field="*{username}" class="form-control"><br>
         </div>
         <div class="mb-3">
-            <label for="password1" id="password1" class="form-label">비밀번호</label>
-            <input type="password" th:field="*{password1}" class="form-control">
+            <label for="password1" id="password1" class="form-label"><h5><b>비밀번호를 입력하세요.</b></h5></label>
+            <input type="password" th:field="*{password1}" class="form-control"><br>
         </div>
         <div class="mb-3">
-            <label for="password2"   id="password2" class="form-label">비밀번호 확인</label>
-            <input type="password" th:field="*{password2}" class="form-control">
+            <label for="password2"   id="password2" class="form-label"><h5><b>비밀번호를 다시 입력하세요.</b></h5></label>
+            <input type="password" th:field="*{password2}" class="form-control"><br>
         </div>
         <div class="mb-3">
-            <label for="email"  id="email" class="form-label">이메일</label>
-            <input type="email" th:field="*{email}" class="form-control">
+            <label for="email"  id="email" class="form-label"><h5><b>이메일을 입력하세요.</b></h5></label>
+            <input type="email" th:field="*{email}" class="form-control"><br>
+        </div>
+        <div class="mb-3">
+            <label><h5><b>성별을 체크해주세요.</b></h5></label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">남성</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">여성</label><br>
+
+        </div>
+        <div class="mb-3">
+            <label for="birthdate"><h5><b>생년월일을 입력하세요.</b></h5></label>
+            <input type="date" id="birthdate" name="birthdate" required><br><br><br>
         </div>
         <button type="submit" class="btn btn-primary">회원가입</button>
     </form>

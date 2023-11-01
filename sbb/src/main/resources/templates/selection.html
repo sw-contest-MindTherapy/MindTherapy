@@ -1,0 +1,68 @@
+<html layout:decorate="~{layout}" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<div layout:fragment="content" class="container my-3"> <!--써줘야 타임리프에서 html이 작동함-->
+<head>
+        <link rel="stylesheet" type="text/css" th:href="@{/style-selection.css}">
+
+
+</head>
+
+    <br><br><h1><b>당신의 역할을 선택하세요</b></h1>
+    <form id="userTypeForm" class="box-container">
+        <div class="box left-box">
+            <input type="radio" class="user-type" id="counselorRadio" name="userType" value="counselor">
+            <label for="counselorRadio" class="box-label">
+                <span><h2><b>상담사</b></h2></span>
+                <img th:src="@{/pic/girl.png}" alt="상담자 이미지" class="box-image">
+            </label>
+        </div>
+        <div class="box right-box">
+            <input type="radio" class="user-type" id="nonCounselorRadio" name="userType" value="non-counselor">
+            <label for="nonCounselorRadio" class="box-label">
+                <span><h2><b>상담자</b></h2></span>
+                <img th:src="@{/pic/man.png}" alt="비상담자 이미지" class="box-image">
+            </label>
+        </div>
+        <button type="submit" class="button-container">선택</button>
+    </form>
+    <script th:inline="javascript">
+        /* 이미지 클릭 시 라디오 버튼 선택 및 스타일 변경 */
+        var userTypes = document.querySelectorAll('.user-type');
+        var boxes = document.querySelectorAll('.box');
+
+        boxes.forEach(function(box, index) {
+            box.addEventListener('click', function() {
+                userTypes[index].checked = true; // 해당 라디오 버튼 선택
+                // 선택된 박스에 'selected' 클래스 추가, 다른 박스에는 제거
+                boxes.forEach(function(otherBox) {
+                    otherBox.classList.remove('selected');
+                });
+                box.classList.add('selected');
+            });
+        });
+
+        /* 폼 제출 시 리다이렉션을 처리하는 JavaScript */
+        document.getElementById('userTypeForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // 기본 제출 동작 막기
+
+            var selectedUserType = document.querySelector('input[name="userType"]:checked');
+
+            if (selectedUserType) {
+                var userType = selectedUserType.value;
+
+                // 상담자인 경우
+                if (userType === 'counselor') {
+                    window.location.href = "/user/signup"/* 리다이렉트 URL 설정 */;
+                }
+                // 비상담자인 경우
+                else if (userType === 'non-counselor') {
+                    window.location.href ="/user/signup" /* 리다이렉트 URL 설정 */;
+                }
+            }
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</div>
+</html>

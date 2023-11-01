@@ -23,7 +23,7 @@ public class UserController {
     }
 
     @PostMapping("/signup")
-    public String signup(@Valid UserCreateForm userCreateForm, BindingResult bindingResult) {
+    public String signup(@Valid UserCreateForm userCreateForm, BindingResult bindingResult) {// valid한거 bindingresult에담김
         if (bindingResult.hasErrors()) {
             return "signup_form";
         }
@@ -35,7 +35,7 @@ public class UserController {
         }
 
         try {
-            userService.create(userCreateForm.getUsername(),
+            userService.create(userCreateForm.getUsername(), //create는 usercreateform을 db에 넣으려고 엔티티인 siteuser로 바꿔줌
                     userCreateForm.getEmail(), userCreateForm.getPassword1());
         }catch(DataIntegrityViolationException e) {
             e.printStackTrace();
@@ -54,4 +54,9 @@ public class UserController {
     public String login(){
         return "login_form";
     }
+
+    @GetMapping("/selection")
+    public String showSelectionPage(){return "selection";}
+
 }
+

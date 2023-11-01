@@ -1,0 +1,188 @@
+<html layout:decorate="~{layout}" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<div layout:fragment="content" > <!--써줘야 타임리프에서 html이 작동함-->
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" th:href="@{/homepage.css}">
+    </head>
+    <body>
+    <div class="wrap">
+        <div class="intro_bg">
+            <div class="header">
+                <div class="searchArea">
+                    <form>
+                        <input type="search" placeholder="search">
+                        <span>검색</span>
+                    </form>
+                </div>
+                <ul class="nav">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="intro_text">
+                <!--<
+                -->
+            </div>
+        </div>
+    </div>
+    <!-- intro end-->
+    <ul class="amount">
+        <li>
+            <div>
+                <div class="contents1">사용자ID</div>
+                <div class="result"><b>knr0012</b></div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div class="contents1">내 별명</div>
+                <div class="result"><b>두승철</b></div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div class="contents1">추천 키워드</div>
+                <div class="result"><b>우울증</b></div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div class="contents1">추천 상담사</div>
+                <div class="result"><b>김성현</b></div>
+            </div>
+        </li>
+    </ul>
+    <!-- amount end -->
+
+    <div class="main_text0">
+        <h1><b>Quick menu</b></h1>
+        <div class="contents1">빠르게 상담을 시작해보세요.</div>
+
+        <ul class="icons">
+            <li>
+                <div class="icon_img">
+                    <img th:src="@{/pic/icon/chating.png}">
+                </div>
+                <div class="contents1_bold"><h3><b>상담자로 채팅 시작</b></h3></div>
+                <div class="contents2">
+                    당신의 고민을 말해보세요! <br><br>
+                </div>
+                <div class="more">
+                    <button type="button">바로가기</button>
+                </div>
+            </li>
+
+            <li>
+                <div class="icon_img">
+                    <img th:src="@{/pic/icon/chating2.png}">
+                </div>
+                <div class="contents1_bold"><h3><b>상담사로 채팅 시작</b></h3></b></div>
+                <div class="contents2">
+                    누군가의 고민을 들어주세요! <br><br>
+                </div>
+                <div class="more">
+                    <a th:href="@{/chat}"><button type="button">바로가기</button></a>
+                </div>
+            </li>
+
+            <li>
+                <div class="icon_img">
+                    <img th:src="@{/pic/icon/edu.png}">
+                </div>
+                <div class="contents1_bold"><h3><b>상담사/상담자 교육</b></h3></div>
+                <div class="contents2">
+                    좋은 상담을 위해 <br>
+                    교육을 받아보세요! <br>
+                </div>
+                <div class="more">
+                    <button type="button">바로가기</button>
+                </div>
+            </li>
+
+            <li>
+                <div class="icon_img">
+                    <img th:src="@{/pic/icon/QA.png}">
+                </div>
+                <div class="contents1_bold"><h3><b>질문하고 답하기</b></h3></div>
+                <div class="contents2">
+                    질문하고 답해보세요!<br><br>
+                </div>
+                <div class=more>
+                    <a th:href="@{/question/list}"><button type="button">바로가기</button></a> <!--th 하이퍼링크 안에 버튼 감싸기-->
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main_text1">
+        <h1>SERVICE</h1>
+        <div class="contents1">INUBESTOUT 팀의 Service를 소개합니다.</div>
+        <div class="service">
+            <div class="service_photo">
+                <img th:src="@{/pic/service.jpg}">
+            </div>
+            <div class="contents2">
+                <h2><br>당신의 마음은 건강한가요?</h2>
+                저희의 서비스는 심리 상담에 더욱 쉽게 접근하도록 합니다. <br>
+                상담자와 치료자의 엄격한 구분 없이, 누구나 상담자와 상담사가 <br>
+                될 수 있는 개방적인 환경을 제공합니다.<br>
+                그로인해 전문적 상담에 대한 비용과 심리적 부담을 줄일 수 있습니다.<br><br>
+
+                상담을 통해 치료를 받아 회복한 사용자들은<br>
+                자신과 유사한 경험을 가진 다른 사용자를 <br>
+                돌보고 상담하는 데 참여 할 수 있습니다. <br><br>
+
+                더 이상 아픈 맘을 숨기면서 정신병자라는 타이틀을 무서워하지 마세요. <br>
+                대화를 통해 당신의 마음을 상담 받고, 또 다른 누군가를 도와주세요!
+            </div>
+        </div>
+    </div>
+
+    <div class="main_text1">
+        <div class="service">
+            <div class="contents2">
+                <h2><br>누구나 상담사가 될 수 있어요.</h2>
+                상담사들은 AI를 활용하여 상담을 더욱 효과적으로 이어나갈 수 있습니다. <br>
+                AI는 상담 중 발언된 키워드를 분석하고,상담사들에게 상담의 품질을<br>
+                높이고 효율성을 개선하기 위한 키워드 추천을 제공합니다.<br>
+                이를 통해 상담사들은 보다 심도 있는 상담을 진행하며,<br>
+                상담자들에게 더 나은 지원을 제공 할 수 있습니다.<br><br>
+
+                환자들도 AI와 빅데이터 기술을 활용하여 자신에게 최적의 상담자를<br>
+                할당 받을 수 있습니다. 이를 통해 상담의 질을 향상시키고<br>
+                보다 맞춤형 서비스를 제공 받을 수 있을 것으로 기대합니다.<br>
+                이 웹에서 제공하는 간단한 상담사/상담자 교육을 받는다면 더 효율적으로 상담을 진행 할 수 있습니다!
+
+            </div>
+            <div class="service_photo">
+                <img th:src="@{/pic/AI.jpg}">
+            </div>
+        </div>
+    </div>
+
+    <div class="main_text2">
+        <ul>
+            <li>
+                <div><h1>CONTACT</h1></div>
+                <div>서비스가 마음에 드셨다면, 후기를 남겨주세요!</div>
+                <div class="more2">더 알아보기</div>
+            </li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <div>SBB</div>
+        <div>
+            INUBESTOUT  <br>
+            Addr. 인천광역시 연수구 아카데미로 119 <br>
+            010-3833-7529<br>
+            2023 . INUBESTOUT .
+        </div>
+    </div>
+    </body>
+</div>
+</body>
+</html>
