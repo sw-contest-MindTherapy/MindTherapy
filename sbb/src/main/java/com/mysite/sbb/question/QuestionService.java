@@ -1,8 +1,6 @@
 package com.mysite.sbb.question;
 
-import com.mysite.sbb.DataNotFoundException;
 import lombok.RequiredArgsConstructor;
-import org.springframework.cglib.core.Local;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -32,9 +30,8 @@ public class QuestionService {
         Optional<Question> question = this.questionRepository.findById(id);
         if (question.isPresent()) {
             return question.get();
-        } else {
-            throw new DataNotFoundException("question not found");
         }
+        return null;
     }
 
 
