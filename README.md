@@ -8,7 +8,13 @@
 ### 서비스 개발 계기(배경)
 
 <aside>
+<<<<<<< HEAD
 <img src="C:\Users\moon9\Downloads\묻지마범죄 정신질환.png" alt="/icons/book_gray.svg" width="400px" /> <br>**최근 전국민을 두려움에 떨게 했던 "묻지마 칼부림" 사건에 대해 어떻게 생각하시나요?**
+=======
+![image](https://github.com/sw-contest-MindTherapy/MindTherapy/assets/101376904/0e64736c-8cb7-486b-9f75-110f9b71584a)
+
+ **최근 전국민을 두려움에 떨게 했던 "묻지마 칼부림" 사건에 대해 어떻게 생각하시나요?**
+>>>>>>> cc7c6d9bd301728b1aaf0cd54625087aff0de022
 
 **특히 저는 서현역 사건 당시 근처에 있었고 20년 넘게 살아왔던 고향이라 매우 충격적이었고 분노했습니다.**
 
