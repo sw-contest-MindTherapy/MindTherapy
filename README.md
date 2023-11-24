@@ -18,14 +18,11 @@
 
 **이러한 반복되는 정신질환자 및 현실불만자들의 범죄를 조금이나마 감소시키고 예방되기를 희망하며 이 서비스를 개발하게 되었습니다.**
 
-![image](https://github.com/sw-contest-MindTherapy/MindTherapy/assets/101376904/0e64736c-8cb7-486b-9f75-110f9b71584a)
-
-
 
 </aside>
 
-![ 최근 정신질환 관련 중대범죄 (출처 . 한국일보기사)](https://prod-files-secure.s3.us-west-2.amazonaws.com/31468e2d-8c82-4342-8c4d-2528c4d3e4b5/ff935e3c-dee9-48a3-a5e7-6c2499a98aaf/%EB%AC%BB%EC%A7%80%EB%A7%88%EB%B2%94%EC%A3%84_%EC%A0%95%EC%8B%A0%EC%A7%88%ED%99%98.png)
 
+![image](https://github.com/sw-contest-MindTherapy/MindTherapy/assets/101376904/0e64736c-8cb7-486b-9f75-110f9b71584a)
  최근 정신질환 관련 중대범죄 (출처 . 한국일보기사)
 
 ![칼부림 원인자료](https://prod-files-secure.s3.us-west-2.amazonaws.com/31468e2d-8c82-4342-8c4d-2528c4d3e4b5/ec3d7401-2041-4ef0-a686-645117a177f3/%EC%A0%95%EC%8B%A0%EC%A7%88%ED%99%98_%EC%9E%90%EB%A3%8C_2.png)
@@ -47,8 +44,7 @@
 
 ---
 
-![홈페이지 메인 배너](https://prod-files-secure.s3.us-west-2.amazonaws.com/31468e2d-8c82-4342-8c4d-2528c4d3e4b5/928a3781-dd87-47fe-a53c-62f7b11dc63d/service.png)
-
+![홈페이지 메인 배너](https://github.com/sw-contest-MindTherapy/MindTherapy/blob/main/images/service.PNG.png?raw=true)
 홈페이지 메인 배너
 
 ![service.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/31468e2d-8c82-4342-8c4d-2528c4d3e4b5/1e24a219-eb2f-4809-8ebc-8378b2200bb3/service.jpg)
