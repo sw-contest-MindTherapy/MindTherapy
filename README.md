@@ -9,7 +9,8 @@
 
 <aside>
 <<<<<<< HEAD
-<img src="C:\Users\moon9\Downloads\묻지마범죄 정신질환.png" alt="/icons/book_gray.svg" width="400px" /> <br>**최근 전국민을 두려움에 떨게 했던 "묻지마 칼부림" 사건에 대해 어떻게 생각하시나요?**
+
+<br>**최근 전국민을 두려움에 떨게 했던 "묻지마 칼부림" 사건에 대해 어떻게 생각하시나요?**
 =======
 ![image](https://github.com/sw-contest-MindTherapy/MindTherapy/assets/101376904/0e64736c-8cb7-486b-9f75-110f9b71584a)
 
