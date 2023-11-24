@@ -43,9 +43,9 @@
 - `**한때 자신도 환자로 경험했던 경험들을 상담자가되어 공유하는 선순환을 기대하는 모든 것.**`
 
 ---
-
+# 🤨홈페이지 메인 배너
 ![홈페이지 메인 배너](https://github.com/sw-contest-MindTherapy/MindTherapy/blob/main/images/service.PNG.png?raw=true)
-홈페이지 메인 배너
+
 
 ![service.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/31468e2d-8c82-4342-8c4d-2528c4d3e4b5/1e24a219-eb2f-4809-8ebc-8378b2200bb3/service.jpg)
 
