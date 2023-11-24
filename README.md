@@ -58,7 +58,7 @@
 
 ---
 
-![역할선택.PNG](https://prod-files-secure.s3.us-west-2.amazonaws.com/31468e2d-8c82-4342-8c4d-2528c4d3e4b5/a44b0eee-44fd-497f-aaf6-947563ff0fbd/%EC%97%AD%ED%95%A0%EC%84%A0%ED%83%9D.png)
+![역할선택.PNG](https://github.com/sw-contest-MindTherapy/MindTherapy/blob/main/images/%EC%97%AD%ED%95%A0%EC%84%A0%ED%83%9D.PNG.png?raw=true)
 
 <aside>
 📚 **누구나 상담사가 되어 도움을 줄 수도 있고, 또 다른 누군가는 상담자가 되어 도움을 받을 수도 있습니다. 그러나 AI가 효율적으로 키워드를 추천하고, 상담사와 상담자를 효과적으로 매칭하기 위해 서비스를 시작할 때, 어떤 역할로 서비스를 시작할지 결정할 수 있습니다. 상담사로 시작하는 경우, 특정 분야의 지식과 경험이 필요할 수 있습니다. 이러한 정보를 묻고 그 결과를 바탕으로 자신에게 잘 맞는 상담자를 매칭 할 수 있습니다. 반면에 상담자로 시작하는 경우, 어떤 키워드로 상담을 받고 싶은지 키워드를 선택하도록 하여 바로 효율적인 상담이 가능하도록 도울 수 있습니다.**
