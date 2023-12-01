@@ -22,7 +22,7 @@ public class UserController {
         return "signup_form";
     }
 
-    @PostMapping("/signup")
+    @PostMapping("/signup") // HTML form에서/user/signup으로 데이터를 url로 데이터를 보내면 signup메서드 실행
     public String signup(@Valid UserCreateForm userCreateForm, BindingResult bindingResult) {// valid한거 bindingresult에담김
         if (bindingResult.hasErrors()) {
             return "signup_form";
